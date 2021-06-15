@@ -1,8 +1,9 @@
-source 'https://rubygems.org'
+source "https://rubygems.org"
 
 gemspec
 
-gem 'rake'
+gem "rake"
+gem "standardrb"
 
 group :test do
   if Gem::Version.create(RUBY_VERSION) < Gem::Version.create("2.0.0")
@@ -14,8 +15,8 @@ group :test do
     gem "rack", "~> 1.6"
   end
 
-  gem 'rspec', '~> 3.2'
-  gem 'rack-test'
-  gem 'simplecov'
-  gem 'webmock'
+  gem "rspec", "~> 3.2"
+  gem "rack-test"
+  gem "simplecov"
+  gem "webmock"
 end
